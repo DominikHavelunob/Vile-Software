@@ -19,10 +19,6 @@ Since this script uses raw sockets, it **requires administrative privileges**:
 Python **3.x** is required.
 
 ## **Future Improvements**
-🔹 **Automatic OS Detection**  
-  - Detect whether the client is running Windows or Linux and set the correct padding (`-pw` or `-pl`) automatically.  
-  - Implementation: Use `platform.system()` to determine OS type.
-
 🔹 **Encryption & Secure Transmission**  
   - Use **AES encryption** to protect the payload from being intercepted.  
   - Each client would encrypt messages, and the server would decrypt them.
