@@ -22,5 +22,5 @@ Python **3.x** is required.
 ## **Installation**
 Clone this repository and navigate to the directory:
 ```sh
-git clone https://github.com/your-repo/icmp-comm.git
-cd icmp-comm
+git clone https://github.com/DominikHavelunob/Vile-Software.git
+
