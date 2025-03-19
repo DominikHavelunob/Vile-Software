@@ -18,15 +18,7 @@ Since this script uses raw sockets, it **requires administrative privileges**:
 
 Python **3.x** is required.
 
-## **Installation**
-Clone this repository and navigate to the directory:
-```sh
-git clone https://github.com/DominikHavelunob/Vile-Software.git
-
-
----
-
-### **Future Improvements**
+## **Future Improvements**
 🔹 **Automatic OS Detection**  
   - Detect whether the client is running Windows or Linux and set the correct padding (`-pw` or `-pl`) automatically.  
   - Implementation: Use `platform.system()` to determine OS type.
@@ -49,4 +41,12 @@ git clone https://github.com/DominikHavelunob/Vile-Software.git
 🔹 **Graphical User Interface (GUI)**  
   - Develop a **simple GUI** to configure and launch the client/server.  
   - Could use **Tkinter, PyQt, or a web-based interface**.
+
+## **Installation**
+Clone this repository and navigate to the directory:
+```sh
+git clone https://github.com/DominikHavelunob/Vile-Software.git
+
+
+
 
