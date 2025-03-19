@@ -15,7 +15,6 @@ This project implements an ICMP-based communication system using raw sockets. Th
 ## **Prerequisites**
 Since this script uses raw sockets, it **requires administrative privileges**:
 - **Linux/macOS:** Run the script with `sudo`
-- **Windows:** Run the script in an administrator Command Prompt
 
 Python **3.x** is required.
 
@@ -23,4 +22,31 @@ Python **3.x** is required.
 Clone this repository and navigate to the directory:
 ```sh
 git clone https://github.com/DominikHavelunob/Vile-Software.git
+
+
+---
+
+### **Future Improvements**
+🔹 **Automatic OS Detection**  
+  - Detect whether the client is running Windows or Linux and set the correct padding (`-pw` or `-pl`) automatically.  
+  - Implementation: Use `platform.system()` to determine OS type.
+
+🔹 **Encryption & Secure Transmission**  
+  - Use **AES encryption** to protect the payload from being intercepted.  
+  - Each client would encrypt messages, and the server would decrypt them.
+
+🔹 **Logging Enhancements**  
+  - Store logs in **JSON** format for easier analysis.  
+  - Optionally send logs to a remote server for centralized monitoring.
+
+🔹 **Multithreading for the Server**  
+  - Allow handling multiple ICMP clients simultaneously using Python’s `threading` module.  
+  - Would improve performance when multiple devices send ICMP packets.
+
+🔹 **IPv6 Support**  
+  - Extend functionality to work over IPv6 (`socket.AF_INET6`).
+
+🔹 **Graphical User Interface (GUI)**  
+  - Develop a **simple GUI** to configure and launch the client/server.  
+  - Could use **Tkinter, PyQt, or a web-based interface**.
 
